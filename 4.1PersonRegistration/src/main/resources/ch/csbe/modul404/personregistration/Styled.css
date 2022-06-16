@@ -1,0 +1,19 @@
+.APLeft {
+    -fx-background-color: #292929;
+}
+
+.BGCLogin {
+    -fx-background-color: #f0f2ff;
+}
+
+.rootRegister {
+    -fx-background-color: #F8F8FF;
+}
+
+.lblWarning {
+    -fx-border-width: 1.0;
+    -fx-border-color: #808080;
+    -fx-background-color: #F1F1FF;
+    -fx-opacity: 0.85;
+    -fx-effect: innershadow( one-pass-box, dimgrey, 2, 50, 2, 2);
+}

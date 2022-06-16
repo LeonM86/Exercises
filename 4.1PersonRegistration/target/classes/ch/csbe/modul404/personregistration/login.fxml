@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="loginStage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" stylesheets="@Styled.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.csbe.modul404.personregistration.LoginController">
+   <left>
+      <AnchorPane fx:id="APLeft" prefHeight="407.0" prefWidth="228.0" styleClass="APLeft" stylesheets="@Styled.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imgLogo" fitHeight="121.0" fitWidth="91.0" layoutX="71.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true" style="fx-background-color: black;">
+               <image>
+                  <Image url="@../../../../../../Image/Logo.PNG" />
+               </image>
+            </ImageView>
+            <Label layoutX="54.0" layoutY="380.0" text="created by Leon Mueller" textFill="#2942ff">
+               <font>
+                  <Font name="Century Gothic" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="53.0" prefHeight="32.0" prefWidth="189.0" text="Person Registration" textAlignment="CENTER" textFill="#2942ff">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane fx:id="APLogin" prefHeight="400.0" prefWidth="293.0" styleClass="BGCLogin" stylesheets="@Styled.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="96.0" layoutY="67.0" text="Benutzername:">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="116.0" layoutY="169.0" text="Passwort:">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUsername" alignment="CENTER" layoutX="38.0" layoutY="100.0" prefHeight="25.0" prefWidth="212.0">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="pwfPassword" alignment="CENTER" layoutX="39.0" layoutY="204.0" prefHeight="25.0" prefWidth="212.0">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="btnLogin" layoutX="71.0" layoutY="265.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefWidth="150.0" text="Login">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnClose" contentDisplay="CENTER" layoutX="70.0" layoutY="358.0" mnemonicParsing="false" onAction="#onCloseButtonClick" prefWidth="150.0" text="Schliessen" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="txtErrorUsername" alignment="CENTER" layoutX="37.0" layoutY="132.0" prefHeight="17.0" prefWidth="213.0" textFill="#eb1010">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtErrorPassword" alignment="CENTER" layoutX="39.0" layoutY="238.0" prefHeight="17.0" prefWidth="213.0" textFill="#eb1010">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtLogin" layoutX="33.0" layoutY="27.0" prefHeight="17.0" prefWidth="227.0" />
+            <Button fx:id="btnNext" disable="true" layoutX="72.0" layoutY="312.0" mnemonicParsing="false" onAction="#switchToRegisterScene" prefWidth="150.0" text="Weiter">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
